@@ -1,0 +1,16 @@
+[user]
+	name = magicweng
+	email = magicweng@xx.com
+[diff]
+  tool = default-difftool
+[difftool "default-difftool"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+  br = branch
+  st = status
+	co = checkout
+	cp = cherry-pick
+	l = log --oneline -10
+	ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+	hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<<%an>>%Creset' --abbrev-commit --date=relative
