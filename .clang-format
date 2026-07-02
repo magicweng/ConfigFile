@@ -1,0 +1,72 @@
+---
+Language: Cpp
+
+BasedOnStyle: LLVM
+
+Standard: Auto
+
+# 缩进
+UseTab: Never
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+
+# 每行最大长度
+ColumnLimit: 180
+
+# 大括号
+BreakBeforeBraces: Attach
+
+# 指针
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+
+# include
+SortIncludes: false
+IncludeBlocks: Preserve
+
+# namespace
+NamespaceIndentation: None
+
+# 对齐
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignTrailingComments: true
+
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+
+# 参数
+BinPackArguments: false
+BinPackParameters: false
+
+# 空格
+SpaceBeforeParens: ControlStatements
+
+# 短语句
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+
+# Constructor
+BreakConstructorInitializers: BeforeComma
+
+# C++11
+Cpp11BracedListStyle: true
+
+# 保留空行
+MaxEmptyLinesToKeep: 1
+
+# 字符串
+BreakStringLiterals: false
+
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyExcessCharacter: 1000000
+BreakBeforeBinaryOperators: None
+
+PenaltyBreakFirstLessLess: 100000
+PenaltyIndentedWhitespace: 0
+ContinuationIndentWidth: 8
+AlignOperands: DontAlign
